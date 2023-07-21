@@ -6,7 +6,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const path=require('path');
 const app = express();
-const port = 5000;
+const port = process.env.port||5000;
 require('dotenv').config();
 const dbUrl=process.env.DATABASE;
 // Middleware
